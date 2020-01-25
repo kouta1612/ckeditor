@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CkeditorController@create');
+Route::post('/store', 'CkeditorController@store');
